@@ -1,11 +1,19 @@
 <?php
 	
+	/*
+	//HOME
 	$dbhost     = "localhost";
 	$dbname 	= "mysqlbackup_tool";
     $dbuname    = "root";
     $dbpassw    = "1309jamM@";
-	
-	
+	*/
+
+    //PICA
+	$dbhost     = "localhost";
+	$dbname 	= "website-backup-tool";
+    $dbuname    = "root";
+    $dbpassw    = "1309piCa";
+
     $conn = mysql_connect($dbhost, $dbuname, $dbpassw)or die("The Website could not connect to the Database. Please help us out and <a href=\"mailto: jamesmehorter@gmail.com?subject=DB Backup Tool: Bug Report\">Submit a Bug!</a>");
     mysql_select_db($dbname)or die("The Website could not select the Database Tables. Please help us out and <a href=\"mailto: jamesmehorter@gmail.com?subject=DB Backup Tool: Bug Report\">Submit a Bug!</a>");  
 	
